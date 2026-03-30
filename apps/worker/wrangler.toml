@@ -1,0 +1,9 @@
+name = "neurameter-ingestion"
+main = "src/index.ts"
+compatibility_date = "2025-03-27"
+
+[vars]
+SUPABASE_URL = "https://nzgkejeendgxzkwjbahw.supabase.co"
+
+# Secrets (set via `wrangler secret put`):
+# SUPABASE_SERVICE_ROLE_KEY

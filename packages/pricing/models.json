@@ -1,0 +1,53 @@
+{
+  "openai": {
+    "gpt-4o": {
+      "inputPricePerMToken": 2500000,
+      "outputPricePerMToken": 10000000,
+      "cachedInputPricePerMToken": 1250000
+    },
+    "gpt-4o-mini": {
+      "inputPricePerMToken": 150000,
+      "outputPricePerMToken": 600000,
+      "cachedInputPricePerMToken": 75000
+    },
+    "gpt-4.1": {
+      "inputPricePerMToken": 2000000,
+      "outputPricePerMToken": 8000000,
+      "cachedInputPricePerMToken": 500000
+    },
+    "gpt-4.1-mini": {
+      "inputPricePerMToken": 400000,
+      "outputPricePerMToken": 1600000,
+      "cachedInputPricePerMToken": 100000
+    },
+    "o1": {
+      "inputPricePerMToken": 15000000,
+      "outputPricePerMToken": 60000000,
+      "reasoningPricePerMToken": 60000000,
+      "cachedInputPricePerMToken": 7500000
+    },
+    "o3-mini": {
+      "inputPricePerMToken": 1100000,
+      "outputPricePerMToken": 4400000,
+      "reasoningPricePerMToken": 4400000,
+      "cachedInputPricePerMToken": 550000
+    }
+  },
+  "anthropic": {
+    "claude-sonnet-4-20250514": {
+      "inputPricePerMToken": 3000000,
+      "outputPricePerMToken": 15000000,
+      "cachedInputPricePerMToken": 300000
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputPricePerMToken": 800000,
+      "outputPricePerMToken": 4000000,
+      "cachedInputPricePerMToken": 80000
+    },
+    "claude-opus-4-20250514": {
+      "inputPricePerMToken": 15000000,
+      "outputPricePerMToken": 75000000,
+      "cachedInputPricePerMToken": 1500000
+    }
+  }
+}

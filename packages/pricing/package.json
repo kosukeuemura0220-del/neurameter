@@ -1,0 +1,14 @@
+{
+  "name": "@neurameter/pricing",
+  "version": "0.1.0",
+  "description": "Model pricing data for NeuraMeter",
+  "type": "module",
+  "main": "./models.json",
+  "types": "./types.d.ts",
+  "exports": {
+    ".": "./models.json",
+    "./models.json": "./models.json"
+  },
+  "files": ["models.json", "types.d.ts"],
+  "license": "MIT"
+}
