@@ -25,11 +25,11 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm build
+      - run: pnpm --filter './packages/*' build
 
-      - run: pnpm typecheck
+      - run: pnpm --filter './packages/*' typecheck
 
-      - run: pnpm test
+      - run: pnpm --filter './packages/*' test
 
       - name: Publish @neurameter/core
         run: pnpm --filter @neurameter/core publish --no-git-checks
