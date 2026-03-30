@@ -30,5 +30,13 @@
     "vitest": "^3.0.0"
   },
   "sideEffects": false,
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuria-dev/neurameter.git",
+    "directory": "packages/transport"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

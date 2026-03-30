@@ -3,6 +3,8 @@ export interface ModelPricing {
   outputPricePerMToken: number;
   reasoningPricePerMToken?: number;
   cachedInputPricePerMToken?: number;
+  contextWindowSize: number;
+  maxOutputTokens: number;
 }
 
 export interface PricingData {
