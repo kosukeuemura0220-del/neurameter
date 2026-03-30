@@ -16,12 +16,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
           registry-url: https://registry.npmjs.org
 
@@ -55,5 +53,20 @@ jobs:
 
       - name: Publish @neurameter/anthropic
         run: pnpm --filter @neurameter/anthropic publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/langchain
+        run: pnpm --filter @neurameter/langchain publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/vercel-ai
+        run: pnpm --filter @neurameter/vercel-ai publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/mcp-server
+        run: pnpm --filter @neurameter/mcp-server publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
