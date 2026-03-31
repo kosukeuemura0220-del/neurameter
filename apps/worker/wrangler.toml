@@ -1,0 +1,8 @@
+name = "neurameter-ingestion"
+main = "src/index.ts"
+compatibility_date = "2025-03-27"
+workers_dev = true
+
+# Set environment variables via `wrangler secret put`:
+# wrangler secret put SUPABASE_URL
+# wrangler secret put SUPABASE_SERVICE_ROLE_KEY

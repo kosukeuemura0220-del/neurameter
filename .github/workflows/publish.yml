@@ -1,0 +1,72 @@
+name: Publish to npm
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm --filter './packages/*' build
+
+      - run: pnpm --filter './packages/*' typecheck
+
+      - run: pnpm --filter './packages/*' test
+
+      - name: Publish @neurameter/core
+        run: pnpm --filter @neurameter/core publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/pricing
+        run: pnpm --filter @neurameter/pricing publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/transport
+        run: pnpm --filter @neurameter/transport publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/openai
+        run: pnpm --filter @neurameter/openai publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/anthropic
+        run: pnpm --filter @neurameter/anthropic publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/langchain
+        run: pnpm --filter @neurameter/langchain publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/vercel-ai
+        run: pnpm --filter @neurameter/vercel-ai publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish @neurameter/mcp-server
+        run: pnpm --filter @neurameter/mcp-server publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

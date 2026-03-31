@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.turbo/
+.next/
+.wrangler/
+.env
+.env.*
+.env.local
+.env.*.local
+*.tsbuildinfo
+.vercel/
+
+# Internal docs (keep README.md only)
+docs/
+01-*.md
+02-*.md
+03-*.md
+neurameter-week*.md
+
+# IDE / editor config
+.claude/
+
+# Build artifacts
+*.tgz
