@@ -17,16 +17,15 @@ interface GuardConfig {
   id?: string;
   org_id: string;
   guard_mode: GuardMode;
-  scope: Scope;
   agent_name: string | null;
-  input_tokens_soft: number | null;
-  input_tokens_hard: number | null;
-  context_utilization_soft: number | null;
-  context_utilization_hard: number | null;
-  cost_per_call_soft: number | null;
-  cost_per_call_hard: number | null;
-  cost_per_hour: number | null;
-  slack_webhook_url: string | null;
+  max_input_tokens: number | null;
+  max_input_tokens_hard: number | null;
+  max_context_utilization: number | null;
+  max_context_utilization_hard: number | null;
+  max_cost_per_call: number | null;
+  max_cost_per_call_hard: number | null;
+  max_cost_per_hour: number | null;
+  notify_slack_webhook: string | null;
 }
 
 interface AgentGuard {
@@ -186,42 +185,42 @@ export default function GuardsPage() {
     if (config) {
       setConfigId(config.id);
       setMode(config.guard_mode ?? 'notify');
-      setScope(config.scope ?? 'project');
+      setScope(config.agent_name ? 'agent' : 'project');
       setAgentName(config.agent_name ?? '');
       setInputTokensSoft(
-        config.input_tokens_soft != null
-          ? String(config.input_tokens_soft)
+        config.max_input_tokens != null
+          ? String(config.max_input_tokens)
           : '',
       );
       setInputTokensHard(
-        config.input_tokens_hard != null
-          ? String(config.input_tokens_hard)
+        config.max_input_tokens_hard != null
+          ? String(config.max_input_tokens_hard)
           : '',
       );
       setContextUtilSoft(
-        config.context_utilization_soft != null
-          ? String(config.context_utilization_soft)
+        config.max_context_utilization != null
+          ? String(config.max_context_utilization)
           : '',
       );
       setContextUtilHard(
-        config.context_utilization_hard != null
-          ? String(config.context_utilization_hard)
+        config.max_context_utilization_hard != null
+          ? String(config.max_context_utilization_hard)
           : '',
       );
       setCostPerCallSoft(
-        config.cost_per_call_soft != null
-          ? String(config.cost_per_call_soft)
+        config.max_cost_per_call != null
+          ? String(config.max_cost_per_call)
           : '',
       );
       setCostPerCallHard(
-        config.cost_per_call_hard != null
-          ? String(config.cost_per_call_hard)
+        config.max_cost_per_call_hard != null
+          ? String(config.max_cost_per_call_hard)
           : '',
       );
       setCostPerHour(
-        config.cost_per_hour != null ? String(config.cost_per_hour) : '',
+        config.max_cost_per_hour != null ? String(config.max_cost_per_hour) : '',
       );
-      setSlackWebhookUrl(config.slack_webhook_url ?? '');
+      setSlackWebhookUrl(config.notify_slack_webhook ?? '');
     }
   }, [supabase]);
 
@@ -234,24 +233,23 @@ export default function GuardsPage() {
     setSaving(true);
     setSaveMessage(null);
 
-    const payload: Omit<GuardConfig, 'id'> = {
+    const payload = {
       org_id: orgId,
       guard_mode: mode,
-      scope,
       agent_name: scope === 'agent' ? agentName || null : null,
-      input_tokens_soft: inputTokensSoft ? Number(inputTokensSoft) : null,
-      input_tokens_hard:
+      max_input_tokens: inputTokensSoft ? Number(inputTokensSoft) : null,
+      max_input_tokens_hard:
         mode === 'block' && inputTokensHard ? Number(inputTokensHard) : null,
-      context_utilization_soft: contextUtilSoft
+      max_context_utilization: contextUtilSoft
         ? Number(contextUtilSoft)
         : null,
-      context_utilization_hard:
+      max_context_utilization_hard:
         mode === 'block' && contextUtilHard ? Number(contextUtilHard) : null,
-      cost_per_call_soft: costPerCallSoft ? Number(costPerCallSoft) : null,
-      cost_per_call_hard:
+      max_cost_per_call: costPerCallSoft ? Number(costPerCallSoft) : null,
+      max_cost_per_call_hard:
         mode === 'block' && costPerCallHard ? Number(costPerCallHard) : null,
-      cost_per_hour: costPerHour ? Number(costPerHour) : null,
-      slack_webhook_url: slackWebhookUrl || null,
+      max_cost_per_hour: costPerHour ? Number(costPerHour) : null,
+      notify_slack_webhook: slackWebhookUrl || null,
     };
 
     let error;
