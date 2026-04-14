@@ -1,61 +1,42 @@
 import type { ModelPricing } from './types';
+import pricingData from './pricing-data.json' with { type: 'json' };
 
 /**
- * Built-in pricing data — microdollars per million tokens.
- * e.g. $2.50 per 1M tokens = 2_500_000 microdollars per 1M tokens
+ * Pricing data — microdollars per million tokens.
+ *
+ * The bulk of entries are auto-synced from LiteLLM's canonical catalog
+ * (packages/core/src/pricing-data.json, regenerated via `pnpm sync:pricing`).
+ * Manual overrides below take precedence when a model needs a custom price
+ * (e.g. enterprise contract pricing, correction ahead of upstream sync).
  */
+const MANUAL_OVERRIDES: Record<string, Record<string, ModelPricing>> = {
+  // Add entries here to override the synced catalog.
+  // Example:
+  // openai: {
+  //   'gpt-4o': { inputPricePerMToken: 2_500_000, outputPricePerMToken: 10_000_000 },
+  // },
+};
+
+type PricingData = {
+  _meta: { source: string; generatedAt: string; modelCount: number };
+  pricing: Record<string, Record<string, ModelPricing>>;
+};
+
+const SYNCED = (pricingData as PricingData).pricing;
+
+function mergeProvider(provider: string): Record<string, ModelPricing> {
+  return {
+    ...(SYNCED[provider] ?? {}),
+    ...(MANUAL_OVERRIDES[provider] ?? {}),
+  };
+}
+
 const PRICING: Record<string, Record<string, ModelPricing>> = {
-  openai: {
-    'gpt-4o': {
-      inputPricePerMToken: 2_500_000,
-      outputPricePerMToken: 10_000_000,
-      cachedInputPricePerMToken: 1_250_000,
-    },
-    'gpt-4o-mini': {
-      inputPricePerMToken: 150_000,
-      outputPricePerMToken: 600_000,
-      cachedInputPricePerMToken: 75_000,
-    },
-    'gpt-4.1': {
-      inputPricePerMToken: 2_000_000,
-      outputPricePerMToken: 8_000_000,
-      cachedInputPricePerMToken: 500_000,
-    },
-    'gpt-4.1-mini': {
-      inputPricePerMToken: 400_000,
-      outputPricePerMToken: 1_600_000,
-      cachedInputPricePerMToken: 100_000,
-    },
-    o1: {
-      inputPricePerMToken: 15_000_000,
-      outputPricePerMToken: 60_000_000,
-      reasoningPricePerMToken: 60_000_000,
-      cachedInputPricePerMToken: 7_500_000,
-    },
-    'o3-mini': {
-      inputPricePerMToken: 1_100_000,
-      outputPricePerMToken: 4_400_000,
-      reasoningPricePerMToken: 4_400_000,
-      cachedInputPricePerMToken: 550_000,
-    },
-  },
-  anthropic: {
-    'claude-sonnet-4-20250514': {
-      inputPricePerMToken: 3_000_000,
-      outputPricePerMToken: 15_000_000,
-      cachedInputPricePerMToken: 300_000,
-    },
-    'claude-haiku-4-5-20251001': {
-      inputPricePerMToken: 800_000,
-      outputPricePerMToken: 4_000_000,
-      cachedInputPricePerMToken: 80_000,
-    },
-    'claude-opus-4-20250514': {
-      inputPricePerMToken: 15_000_000,
-      outputPricePerMToken: 75_000_000,
-      cachedInputPricePerMToken: 1_500_000,
-    },
-  },
+  openai: mergeProvider('openai'),
+  anthropic: mergeProvider('anthropic'),
+  google: mergeProvider('google'),
+  groq: mergeProvider('groq'),
+  mistral: mergeProvider('mistral'),
 };
 
 export function getModelPricing(
@@ -68,10 +49,14 @@ export function getModelPricing(
   // Exact match first
   if (providerPricing[model]) return providerPricing[model];
 
-  // Prefix match: e.g. "gpt-4o-mini-2024-07-18" → "gpt-4o-mini"
-  for (const key of Object.keys(providerPricing)) {
+  // Longest-prefix match: e.g. "gpt-4o-mini-2024-07-18" → "gpt-4o-mini"
+  // Sort keys by length desc so "gpt-4o-mini" wins over "gpt-4o".
+  const keys = Object.keys(providerPricing).sort((a, b) => b.length - a.length);
+  for (const key of keys) {
     if (model.startsWith(key)) return providerPricing[key];
   }
 
   return undefined;
 }
+
+export const _pricingMeta = (pricingData as PricingData)._meta;

@@ -1,6 +1,6 @@
 import type { GuardsConfig, GuardMode, GuardDecision } from './guards';
 
-export type Provider = 'openai' | 'anthropic' | 'google' | 'other';
+export type Provider = 'openai' | 'anthropic' | 'google' | 'groq' | 'mistral' | 'other';
 
 export interface CostEvent {
   eventId: string;
@@ -62,6 +62,7 @@ export interface ModelPricing {
   outputPricePerMToken: number;
   reasoningPricePerMToken?: number;
   cachedInputPricePerMToken?: number;
+  cacheWritePricePerMToken?: number;
 }
 
 export interface TokenUsage {
@@ -69,4 +70,46 @@ export interface TokenUsage {
   outputTokens: number;
   reasoningTokens?: number;
   cachedTokens?: number;
+}
+
+// v3.0 Anomaly Detection
+
+export type AnomalyType =
+  | 'infinite_loop_trace'
+  | 'infinite_loop_hourly'
+  | 'budget_exceeded_hourly'
+  | 'budget_exceeded_trace'
+  | 'budget_exceeded_daily';
+
+export interface AnomalyDetectionConfig {
+  maxCallsPerTrace?: number;
+  maxCallsPerHour?: number;
+  maxCostPerHour?: number;
+  maxCostPerTrace?: number;
+  maxCostPerDay?: number;
+  onAnomaly?: 'notify' | 'block';
+  notifySlackWebhook?: string;
+}
+
+export class NeuraMeterAnomalyError extends Error {
+  constructor(
+    public readonly anomalyType: AnomalyType,
+    public readonly currentValue: number,
+    public readonly threshold: number,
+  ) {
+    super(`Anomaly detected: ${anomalyType} (${currentValue} >= ${threshold})`);
+    this.name = 'NeuraMeterAnomalyError';
+  }
+}
+
+/** Configuration for withNeuraMeter() OpenAI client wrapper. */
+export interface WithNeuraMeterConfig {
+  /** NeuraMeter API key (format: nm_{orgId}_{secret}) */
+  apiKey: string;
+  /** NeuraMeter project ID */
+  projectId: string;
+  /** Agent name for cost events (default: 'default') */
+  agentName?: string;
+  /** NeuraMeter ingestion endpoint (default: 'https://meter.neuria.tech') */
+  endpoint?: string;
 }

@@ -1,6 +1,6 @@
 {
   "name": "@neurameter/core",
-  "version": "0.1.4",
+  "version": "0.1.8",
   "description": "Core SDK for NeuraMeter — AI agent cost tracking",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -23,7 +23,8 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "sync:pricing": "node scripts/sync-pricing.mjs"
   },
   "devDependencies": {
     "tsup": "^8.4.0",

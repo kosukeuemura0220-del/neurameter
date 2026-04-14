@@ -1,0 +1,2969 @@
+{
+  "_meta": {
+    "source": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+    "generatedAt": "2026-04-14T09:26:21.629Z",
+    "modelCount": 639
+  },
+  "pricing": {
+    "anthropic": {
+      "ai21.j2-mid-v1": {
+        "inputPricePerMToken": 12500000,
+        "outputPricePerMToken": 12500000
+      },
+      "ai21.j2-ultra-v1": {
+        "inputPricePerMToken": 18800000,
+        "outputPricePerMToken": 18800000
+      },
+      "ai21.jamba-1-5-large-v1:0": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 8000000
+      },
+      "ai21.jamba-1-5-mini-v1:0": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 400000
+      },
+      "ai21.jamba-instruct-v1:0": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 700000
+      },
+      "us.writer.palmyra-x4-v1:0": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "us.writer.palmyra-x5-v1:0": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 6000000
+      },
+      "writer.palmyra-x4-v1:0": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "writer.palmyra-x5-v1:0": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 6000000
+      },
+      "amazon.nova-lite-v1:0": {
+        "inputPricePerMToken": 60000,
+        "outputPricePerMToken": 240000
+      },
+      "amazon.nova-2-lite-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "amazon.nova-2-pro-preview-20251202-v1:0": {
+        "inputPricePerMToken": 2187500,
+        "outputPricePerMToken": 17500000,
+        "cachedInputPricePerMToken": 546875
+      },
+      "apac.amazon.nova-2-lite-v1:0": {
+        "inputPricePerMToken": 330000,
+        "outputPricePerMToken": 2750000,
+        "cachedInputPricePerMToken": 82500
+      },
+      "apac.amazon.nova-2-pro-preview-20251202-v1:0": {
+        "inputPricePerMToken": 2187500,
+        "outputPricePerMToken": 17500000,
+        "cachedInputPricePerMToken": 546875
+      },
+      "eu.amazon.nova-2-lite-v1:0": {
+        "inputPricePerMToken": 330000,
+        "outputPricePerMToken": 2750000,
+        "cachedInputPricePerMToken": 82500
+      },
+      "eu.amazon.nova-2-pro-preview-20251202-v1:0": {
+        "inputPricePerMToken": 2187500,
+        "outputPricePerMToken": 17500000,
+        "cachedInputPricePerMToken": 546875
+      },
+      "us.amazon.nova-2-lite-v1:0": {
+        "inputPricePerMToken": 330000,
+        "outputPricePerMToken": 2750000,
+        "cachedInputPricePerMToken": 82500
+      },
+      "us.amazon.nova-2-pro-preview-20251202-v1:0": {
+        "inputPricePerMToken": 2187500,
+        "outputPricePerMToken": 17500000,
+        "cachedInputPricePerMToken": 546875
+      },
+      "amazon.nova-2-multimodal-embeddings-v1:0": {
+        "inputPricePerMToken": 135000,
+        "outputPricePerMToken": 0
+      },
+      "amazon.nova-micro-v1:0": {
+        "inputPricePerMToken": 35000,
+        "outputPricePerMToken": 140000
+      },
+      "amazon.nova-pro-v1:0": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 3200000
+      },
+      "amazon.titan-embed-image-v1": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 0
+      },
+      "amazon.titan-embed-text-v1": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "amazon.titan-embed-text-v2:0": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 0
+      },
+      "twelvelabs.marengo-embed-2-7-v1:0": {
+        "inputPricePerMToken": 70000000,
+        "outputPricePerMToken": 0
+      },
+      "us.twelvelabs.marengo-embed-2-7-v1:0": {
+        "inputPricePerMToken": 70000000,
+        "outputPricePerMToken": 0
+      },
+      "eu.twelvelabs.marengo-embed-2-7-v1:0": {
+        "inputPricePerMToken": 70000000,
+        "outputPricePerMToken": 0
+      },
+      "amazon.titan-text-express-v1": {
+        "inputPricePerMToken": 1300000,
+        "outputPricePerMToken": 1700000
+      },
+      "amazon.titan-text-lite-v1": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 400000
+      },
+      "amazon.titan-text-premier-v1:0": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "anthropic.claude-3-5-haiku-20241022-v1:0": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 4000000,
+        "cachedInputPricePerMToken": 80000,
+        "cacheWritePricePerMToken": 1000000
+      },
+      "anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000,
+        "cachedInputPricePerMToken": 100000,
+        "cacheWritePricePerMToken": 1250000
+      },
+      "anthropic.claude-haiku-4-5@20251001": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000,
+        "cachedInputPricePerMToken": 100000,
+        "cacheWritePricePerMToken": 1250000
+      },
+      "anthropic.claude-3-5-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "anthropic.claude-3-5-sonnet-20241022-v2:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "anthropic.claude-3-7-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3600000,
+        "outputPricePerMToken": 18000000,
+        "cachedInputPricePerMToken": 360000,
+        "cacheWritePricePerMToken": 4500000
+      },
+      "anthropic.claude-3-7-sonnet-20250219-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "anthropic.claude-3-haiku-20240307-v1:0": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000,
+        "cachedInputPricePerMToken": 25000,
+        "cacheWritePricePerMToken": 312500
+      },
+      "anthropic.claude-3-opus-20240229-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "anthropic.claude-3-sonnet-20240229-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "anthropic.claude-instant-v1": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 2400000
+      },
+      "anthropic.claude-opus-4-1-20250805-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "anthropic.claude-opus-4-20250514-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "anthropic.claude-opus-4-5-20251101-v1:0": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "anthropic.claude-opus-4-6-v1": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "global.anthropic.claude-opus-4-6-v1": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "us.anthropic.claude-opus-4-6-v1": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 27500000,
+        "cachedInputPricePerMToken": 550000,
+        "cacheWritePricePerMToken": 6875000
+      },
+      "eu.anthropic.claude-opus-4-6-v1": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 27500000,
+        "cachedInputPricePerMToken": 550000,
+        "cacheWritePricePerMToken": 6875000
+      },
+      "au.anthropic.claude-opus-4-6-v1": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 27500000,
+        "cachedInputPricePerMToken": 550000,
+        "cacheWritePricePerMToken": 6875000
+      },
+      "anthropic.claude-sonnet-4-6": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "global.anthropic.claude-sonnet-4-6": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "us.anthropic.claude-sonnet-4-6": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "eu.anthropic.claude-sonnet-4-6": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "au.anthropic.claude-sonnet-4-6": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "anthropic.claude-sonnet-4-20250514-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "anthropic.claude-v1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "anthropic.claude-v2:1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "apac.amazon.nova-lite-v1:0": {
+        "inputPricePerMToken": 63000,
+        "outputPricePerMToken": 252000
+      },
+      "apac.amazon.nova-micro-v1:0": {
+        "inputPricePerMToken": 37000,
+        "outputPricePerMToken": 148000
+      },
+      "apac.amazon.nova-pro-v1:0": {
+        "inputPricePerMToken": 840000,
+        "outputPricePerMToken": 3360000
+      },
+      "apac.anthropic.claude-3-5-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "apac.anthropic.claude-3-5-sonnet-20241022-v2:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "apac.anthropic.claude-3-haiku-20240307-v1:0": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000,
+        "cachedInputPricePerMToken": 25000,
+        "cacheWritePricePerMToken": 312500
+      },
+      "apac.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 5500000,
+        "cachedInputPricePerMToken": 110000,
+        "cacheWritePricePerMToken": 1375000
+      },
+      "apac.anthropic.claude-3-sonnet-20240229-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "apac.anthropic.claude-sonnet-4-20250514-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "au.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "ap-northeast-1/anthropic.claude-instant-v1": {
+        "inputPricePerMToken": 2230000,
+        "outputPricePerMToken": 7550000
+      },
+      "ap-northeast-1/anthropic.claude-v1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "ap-northeast-1/anthropic.claude-v2:1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "ap-northeast-1/deepseek.v3.2": {
+        "inputPricePerMToken": 740000,
+        "outputPricePerMToken": 2220000
+      },
+      "ap-northeast-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "ap-northeast-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "ap-northeast-1/moonshotai.kimi-k2-thinking": {
+        "inputPricePerMToken": 730000,
+        "outputPricePerMToken": 3030000
+      },
+      "ap-northeast-1/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 720000,
+        "outputPricePerMToken": 3600000
+      },
+      "ap-northeast-1/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 1440000
+      },
+      "moonshotai.kimi-k2-thinking": {
+        "inputPricePerMToken": 730000,
+        "outputPricePerMToken": 3030000
+      },
+      "moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 3030000
+      },
+      "ap-south-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 3180000,
+        "outputPricePerMToken": 4200000
+      },
+      "ap-south-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 720000
+      },
+      "ap-south-1/deepseek.v3.2": {
+        "inputPricePerMToken": 740000,
+        "outputPricePerMToken": 2220000
+      },
+      "ap-south-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "ap-south-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "ap-south-1/moonshotai.kimi-k2-thinking": {
+        "inputPricePerMToken": 710000,
+        "outputPricePerMToken": 2940000
+      },
+      "ap-south-1/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 720000,
+        "outputPricePerMToken": 3600000
+      },
+      "ap-south-1/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 1440000
+      },
+      "ap-southeast-2/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 309000,
+        "outputPricePerMToken": 1236000
+      },
+      "ap-southeast-3/deepseek.v3.2": {
+        "inputPricePerMToken": 740000,
+        "outputPricePerMToken": 2220000
+      },
+      "ap-southeast-3/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "ap-southeast-3/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "ap-southeast-3/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 720000,
+        "outputPricePerMToken": 3600000
+      },
+      "ap-southeast-3/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 1440000
+      },
+      "ca-central-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 3050000,
+        "outputPricePerMToken": 4030000
+      },
+      "ca-central-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 350000,
+        "outputPricePerMToken": 690000
+      },
+      "eu-north-1/deepseek.v3.2": {
+        "inputPricePerMToken": 740000,
+        "outputPricePerMToken": 2220000
+      },
+      "eu-north-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-north-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-north-1/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 720000,
+        "outputPricePerMToken": 3600000
+      },
+      "eu-central-1/anthropic.claude-instant-v1": {
+        "inputPricePerMToken": 2480000,
+        "outputPricePerMToken": 8380000
+      },
+      "eu-central-1/anthropic.claude-v1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "eu-central-1/anthropic.claude-v2:1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "eu-central-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-central-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-central-1/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-west-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 2860000,
+        "outputPricePerMToken": 3780000
+      },
+      "eu-west-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 320000,
+        "outputPricePerMToken": 650000
+      },
+      "eu-west-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-west-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-west-1/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-west-2/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 3450000,
+        "outputPricePerMToken": 4550000
+      },
+      "eu-west-2/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 390000,
+        "outputPricePerMToken": 780000
+      },
+      "eu-west-2/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 470000,
+        "outputPricePerMToken": 1860000
+      },
+      "eu-west-2/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 470000,
+        "outputPricePerMToken": 1860000
+      },
+      "eu-west-2/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 780000,
+        "outputPricePerMToken": 1860000
+      },
+      "eu-west-3/mistral.mistral-7b-instruct-v0:2": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 260000
+      },
+      "eu-west-3/mistral.mistral-large-2402-v1:0": {
+        "inputPricePerMToken": 10400000,
+        "outputPricePerMToken": 31200000
+      },
+      "eu-west-3/mistral.mixtral-8x7b-instruct-v0:1": {
+        "inputPricePerMToken": 590000,
+        "outputPricePerMToken": 910000
+      },
+      "eu-south-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-south-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "eu-south-1/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 1440000
+      },
+      "invoke/anthropic.claude-3-5-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "sa-east-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 4450000,
+        "outputPricePerMToken": 5880000
+      },
+      "sa-east-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1010000
+      },
+      "sa-east-1/deepseek.v3.2": {
+        "inputPricePerMToken": 740000,
+        "outputPricePerMToken": 2220000
+      },
+      "sa-east-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "sa-east-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 360000,
+        "outputPricePerMToken": 1440000
+      },
+      "sa-east-1/moonshotai.kimi-k2-thinking": {
+        "inputPricePerMToken": 730000,
+        "outputPricePerMToken": 3030000
+      },
+      "sa-east-1/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 720000,
+        "outputPricePerMToken": 3600000
+      },
+      "sa-east-1/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 1440000
+      },
+      "us-east-1/anthropic.claude-instant-v1": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 2400000
+      },
+      "us-east-1/anthropic.claude-v1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "us-east-1/anthropic.claude-v2:1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "us-east-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 2650000,
+        "outputPricePerMToken": 3500000
+      },
+      "us-east-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 600000
+      },
+      "us-east-1/mistral.mistral-7b-instruct-v0:2": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 200000
+      },
+      "us-east-1/mistral.mistral-large-2402-v1:0": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "us-east-1/mistral.mixtral-8x7b-instruct-v0:1": {
+        "inputPricePerMToken": 450000,
+        "outputPricePerMToken": 700000
+      },
+      "us-east-1/deepseek.v3.2": {
+        "inputPricePerMToken": 620000,
+        "outputPricePerMToken": 1850000
+      },
+      "us-east-1/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-east-1/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-east-1/moonshotai.kimi-k2-thinking": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2500000
+      },
+      "us-east-1/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 3000000
+      },
+      "us-east-1/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-east-2/deepseek.v3.2": {
+        "inputPricePerMToken": 620000,
+        "outputPricePerMToken": 1850000
+      },
+      "us-east-2/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-east-2/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-east-2/moonshotai.kimi-k2-thinking": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2500000
+      },
+      "us-east-2/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 3000000
+      },
+      "us-east-2/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-gov-east-1/amazon.nova-pro-v1:0": {
+        "inputPricePerMToken": 960000,
+        "outputPricePerMToken": 3840000
+      },
+      "us-gov-east-1/amazon.titan-embed-text-v1": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "us-gov-east-1/amazon.titan-embed-text-v2:0": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 0
+      },
+      "us-gov-east-1/amazon.titan-text-express-v1": {
+        "inputPricePerMToken": 1300000,
+        "outputPricePerMToken": 1700000
+      },
+      "us-gov-east-1/amazon.titan-text-lite-v1": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 400000
+      },
+      "us-gov-east-1/amazon.titan-text-premier-v1:0": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "us-gov-east-1/anthropic.claude-3-5-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3600000,
+        "outputPricePerMToken": 18000000,
+        "cachedInputPricePerMToken": 360000,
+        "cacheWritePricePerMToken": 4500000
+      },
+      "us-gov-east-1/anthropic.claude-3-haiku-20240307-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1500000,
+        "cachedInputPricePerMToken": 30000,
+        "cacheWritePricePerMToken": 375000
+      },
+      "us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "us-gov-east-1/claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "us-gov-east-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 2650000,
+        "outputPricePerMToken": 3500000
+      },
+      "us-gov-east-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2650000
+      },
+      "us-gov-west-1/amazon.nova-pro-v1:0": {
+        "inputPricePerMToken": 960000,
+        "outputPricePerMToken": 3840000
+      },
+      "us-gov-west-1/amazon.titan-embed-text-v1": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "us-gov-west-1/amazon.titan-embed-text-v2:0": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 0
+      },
+      "us-gov-west-1/amazon.titan-text-express-v1": {
+        "inputPricePerMToken": 1300000,
+        "outputPricePerMToken": 1700000
+      },
+      "us-gov-west-1/amazon.titan-text-lite-v1": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 400000
+      },
+      "us-gov-west-1/amazon.titan-text-premier-v1:0": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "us-gov-west-1/anthropic.claude-3-7-sonnet-20250219-v1:0": {
+        "inputPricePerMToken": 3600000,
+        "outputPricePerMToken": 18000000,
+        "cachedInputPricePerMToken": 360000,
+        "cacheWritePricePerMToken": 4500000
+      },
+      "us-gov-west-1/anthropic.claude-3-5-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3600000,
+        "outputPricePerMToken": 18000000,
+        "cachedInputPricePerMToken": 360000,
+        "cacheWritePricePerMToken": 4500000
+      },
+      "us-gov-west-1/anthropic.claude-3-haiku-20240307-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1500000,
+        "cachedInputPricePerMToken": 30000,
+        "cacheWritePricePerMToken": 375000
+      },
+      "us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "us-gov-west-1/claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "us-gov-west-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 2650000,
+        "outputPricePerMToken": 3500000
+      },
+      "us-gov-west-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2650000
+      },
+      "us-west-1/meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 2650000,
+        "outputPricePerMToken": 3500000
+      },
+      "us-west-1/meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 600000
+      },
+      "us-west-2/anthropic.claude-instant-v1": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 2400000
+      },
+      "us-west-2/anthropic.claude-v1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "us-west-2/anthropic.claude-v2:1": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "us-west-2/mistral.mistral-7b-instruct-v0:2": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 200000
+      },
+      "us-west-2/mistral.mistral-large-2402-v1:0": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "us-west-2/mistral.mixtral-8x7b-instruct-v0:1": {
+        "inputPricePerMToken": 450000,
+        "outputPricePerMToken": 700000
+      },
+      "us-west-2/deepseek.v3.2": {
+        "inputPricePerMToken": 620000,
+        "outputPricePerMToken": 1850000
+      },
+      "us-west-2/minimax.minimax-m2.1": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-west-2/minimax.minimax-m2.5": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "us-west-2/moonshotai.kimi-k2-thinking": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2500000
+      },
+      "us-west-2/moonshotai.kimi-k2.5": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 3000000
+      },
+      "us-west-2/qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1200000
+      },
+      "us.anthropic.claude-3-5-haiku-20241022-v1:0": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 4000000,
+        "cachedInputPricePerMToken": 80000,
+        "cacheWritePricePerMToken": 1000000
+      },
+      "claude-haiku-4-5-20251001": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000,
+        "cachedInputPricePerMToken": 100000,
+        "cacheWritePricePerMToken": 1250000
+      },
+      "claude-haiku-4-5": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000,
+        "cachedInputPricePerMToken": 100000,
+        "cacheWritePricePerMToken": 1250000
+      },
+      "claude-3-7-sonnet-20250219": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-3-haiku-20240307": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000,
+        "cachedInputPricePerMToken": 30000,
+        "cacheWritePricePerMToken": 300000
+      },
+      "claude-3-opus-20240229": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-4-opus-20250514": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-4-sonnet-20250514": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-sonnet-4-5": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-sonnet-4-5-20250929": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-sonnet-4-6": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-opus-4-1": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-opus-4-1-20250805": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-opus-4-20250514": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-opus-4-5-20251101": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "claude-opus-4-5": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "claude-opus-4-6": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "claude-opus-4-6-20260205": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "claude-sonnet-4-20250514": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "cohere.command-light-text-v14": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 600000
+      },
+      "cohere.command-r-plus-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000
+      },
+      "cohere.command-r-v1:0": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "cohere.command-text-v14": {
+        "inputPricePerMToken": 1500000,
+        "outputPricePerMToken": 2000000
+      },
+      "cohere.embed-english-v3": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "cohere.embed-multilingual-v3": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "cohere.embed-v4:0": {
+        "inputPricePerMToken": 120000,
+        "outputPricePerMToken": 0
+      },
+      "deepseek.v3-v1:0": {
+        "inputPricePerMToken": 580000,
+        "outputPricePerMToken": 1680000
+      },
+      "deepseek.v3.2": {
+        "inputPricePerMToken": 620000,
+        "outputPricePerMToken": 1850000
+      },
+      "eu.amazon.nova-lite-v1:0": {
+        "inputPricePerMToken": 78000,
+        "outputPricePerMToken": 312000
+      },
+      "eu.amazon.nova-micro-v1:0": {
+        "inputPricePerMToken": 46000,
+        "outputPricePerMToken": 184000
+      },
+      "eu.amazon.nova-pro-v1:0": {
+        "inputPricePerMToken": 1050000,
+        "outputPricePerMToken": 4200000
+      },
+      "eu.anthropic.claude-3-5-haiku-20241022-v1:0": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000,
+        "cachedInputPricePerMToken": 25000,
+        "cacheWritePricePerMToken": 312500
+      },
+      "eu.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 5500000,
+        "cachedInputPricePerMToken": 110000,
+        "cacheWritePricePerMToken": 1375000
+      },
+      "eu.anthropic.claude-3-5-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "eu.anthropic.claude-3-5-sonnet-20241022-v2:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "eu.anthropic.claude-3-7-sonnet-20250219-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "eu.anthropic.claude-3-haiku-20240307-v1:0": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000,
+        "cachedInputPricePerMToken": 25000,
+        "cacheWritePricePerMToken": 312500
+      },
+      "eu.anthropic.claude-3-opus-20240229-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "eu.anthropic.claude-3-sonnet-20240229-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "eu.anthropic.claude-opus-4-1-20250805-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "eu.anthropic.claude-opus-4-20250514-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "eu.anthropic.claude-sonnet-4-20250514-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "eu.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "eu.meta.llama3-2-1b-instruct-v1:0": {
+        "inputPricePerMToken": 130000,
+        "outputPricePerMToken": 130000
+      },
+      "eu.meta.llama3-2-3b-instruct-v1:0": {
+        "inputPricePerMToken": 190000,
+        "outputPricePerMToken": 190000
+      },
+      "eu.mistral.pixtral-large-2502-v1:0": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 6000000
+      },
+      "google.gemma-3-12b-it": {
+        "inputPricePerMToken": 90000,
+        "outputPricePerMToken": 290000
+      },
+      "google.gemma-3-27b-it": {
+        "inputPricePerMToken": 230000,
+        "outputPricePerMToken": 380000
+      },
+      "google.gemma-3-4b-it": {
+        "inputPricePerMToken": 40000,
+        "outputPricePerMToken": 80000
+      },
+      "global.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "global.anthropic.claude-sonnet-4-20250514-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000,
+        "cachedInputPricePerMToken": 100000,
+        "cacheWritePricePerMToken": 1250000
+      },
+      "global.amazon.nova-2-lite-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "jp.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "jp.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 5500000,
+        "cachedInputPricePerMToken": 110000,
+        "cacheWritePricePerMToken": 1375000
+      },
+      "meta.llama2-13b-chat-v1": {
+        "inputPricePerMToken": 750000,
+        "outputPricePerMToken": 1000000
+      },
+      "meta.llama2-70b-chat-v1": {
+        "inputPricePerMToken": 1950000,
+        "outputPricePerMToken": 2560000
+      },
+      "meta.llama3-1-405b-instruct-v1:0": {
+        "inputPricePerMToken": 5320000,
+        "outputPricePerMToken": 16000000
+      },
+      "meta.llama3-1-70b-instruct-v1:0": {
+        "inputPricePerMToken": 990000,
+        "outputPricePerMToken": 990000
+      },
+      "meta.llama3-1-8b-instruct-v1:0": {
+        "inputPricePerMToken": 220000,
+        "outputPricePerMToken": 220000
+      },
+      "meta.llama3-2-11b-instruct-v1:0": {
+        "inputPricePerMToken": 350000,
+        "outputPricePerMToken": 350000
+      },
+      "meta.llama3-2-1b-instruct-v1:0": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 100000
+      },
+      "meta.llama3-2-3b-instruct-v1:0": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 150000
+      },
+      "meta.llama3-2-90b-instruct-v1:0": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 2000000
+      },
+      "meta.llama3-3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 720000,
+        "outputPricePerMToken": 720000
+      },
+      "meta.llama3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 2650000,
+        "outputPricePerMToken": 3500000
+      },
+      "meta.llama3-8b-instruct-v1:0": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 600000
+      },
+      "meta.llama4-maverick-17b-instruct-v1:0": {
+        "inputPricePerMToken": 240000,
+        "outputPricePerMToken": 970000
+      },
+      "meta.llama4-scout-17b-instruct-v1:0": {
+        "inputPricePerMToken": 170000,
+        "outputPricePerMToken": 660000
+      },
+      "minimax.minimax-m2": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "minimax.minimax-m2.1": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "minimax.minimax-m2.5": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000
+      },
+      "mistral.devstral-2-123b": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "mistral.magistral-small-2509": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "mistral.ministral-3-14b-instruct": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 200000
+      },
+      "mistral.ministral-3-3b-instruct": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 100000
+      },
+      "mistral.ministral-3-8b-instruct": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 150000
+      },
+      "mistral.mistral-7b-instruct-v0:2": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 200000
+      },
+      "mistral.mistral-large-2402-v1:0": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "mistral.mistral-large-2407-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 9000000
+      },
+      "mistral.mistral-large-3-675b-instruct": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "mistral.mistral-small-2402-v1:0": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 3000000
+      },
+      "mistral.mixtral-8x7b-instruct-v0:1": {
+        "inputPricePerMToken": 450000,
+        "outputPricePerMToken": 700000
+      },
+      "mistral.voxtral-mini-3b-2507": {
+        "inputPricePerMToken": 40000,
+        "outputPricePerMToken": 40000
+      },
+      "mistral.voxtral-small-24b-2507": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 300000
+      },
+      "moonshot.kimi-k2-thinking": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2500000
+      },
+      "nvidia.nemotron-nano-12b-v2": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 600000
+      },
+      "nvidia.nemotron-nano-9b-v2": {
+        "inputPricePerMToken": 60000,
+        "outputPricePerMToken": 230000
+      },
+      "nvidia.nemotron-nano-3-30b": {
+        "inputPricePerMToken": 60000,
+        "outputPricePerMToken": 240000
+      },
+      "nvidia.nemotron-super-3-120b": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 650000
+      },
+      "openai.gpt-oss-120b-1:0": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000
+      },
+      "openai.gpt-oss-20b-1:0": {
+        "inputPricePerMToken": 70000,
+        "outputPricePerMToken": 300000
+      },
+      "openai.gpt-oss-safeguard-120b": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000
+      },
+      "openai.gpt-oss-safeguard-20b": {
+        "inputPricePerMToken": 70000,
+        "outputPricePerMToken": 200000
+      },
+      "qwen.qwen3-coder-480b-a35b-v1:0": {
+        "inputPricePerMToken": 220000,
+        "outputPricePerMToken": 1800000
+      },
+      "qwen.qwen3-235b-a22b-2507-v1:0": {
+        "inputPricePerMToken": 220000,
+        "outputPricePerMToken": 880000
+      },
+      "qwen.qwen3-coder-30b-a3b-v1:0": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000
+      },
+      "qwen.qwen3-32b-v1:0": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000
+      },
+      "qwen.qwen3-next-80b-a3b": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 1200000
+      },
+      "qwen.qwen3-vl-235b-a22b": {
+        "inputPricePerMToken": 530000,
+        "outputPricePerMToken": 2660000
+      },
+      "qwen.qwen3-coder-next": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1200000
+      },
+      "us.amazon.nova-lite-v1:0": {
+        "inputPricePerMToken": 60000,
+        "outputPricePerMToken": 240000
+      },
+      "us.amazon.nova-micro-v1:0": {
+        "inputPricePerMToken": 35000,
+        "outputPricePerMToken": 140000
+      },
+      "us.amazon.nova-premier-v1:0": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 12500000
+      },
+      "us.amazon.nova-pro-v1:0": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 3200000
+      },
+      "us.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 5500000,
+        "cachedInputPricePerMToken": 110000,
+        "cacheWritePricePerMToken": 1375000
+      },
+      "us.anthropic.claude-3-5-sonnet-20240620-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "us.anthropic.claude-3-5-sonnet-20241022-v2:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "us.anthropic.claude-3-7-sonnet-20250219-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "us.anthropic.claude-3-haiku-20240307-v1:0": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000,
+        "cachedInputPricePerMToken": 25000,
+        "cacheWritePricePerMToken": 312500
+      },
+      "us.anthropic.claude-3-opus-20240229-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "us.anthropic.claude-3-sonnet-20240229-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "us.anthropic.claude-opus-4-1-20250805-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "us.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
+        "inputPricePerMToken": 3300000,
+        "outputPricePerMToken": 16500000,
+        "cachedInputPricePerMToken": 330000,
+        "cacheWritePricePerMToken": 4125000
+      },
+      "au.anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 5500000,
+        "cachedInputPricePerMToken": 110000,
+        "cacheWritePricePerMToken": 1375000
+      },
+      "us.anthropic.claude-opus-4-20250514-v1:0": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "us.anthropic.claude-opus-4-5-20251101-v1:0": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 27500000,
+        "cachedInputPricePerMToken": 550000,
+        "cacheWritePricePerMToken": 6875000
+      },
+      "global.anthropic.claude-opus-4-5-20251101-v1:0": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "eu.anthropic.claude-opus-4-5-20251101-v1:0": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "us.anthropic.claude-sonnet-4-20250514-v1:0": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "us.deepseek.r1-v1:0": {
+        "inputPricePerMToken": 1350000,
+        "outputPricePerMToken": 5400000
+      },
+      "us.deepseek.v3.2": {
+        "inputPricePerMToken": 620000,
+        "outputPricePerMToken": 1850000
+      },
+      "eu.deepseek.v3.2": {
+        "inputPricePerMToken": 740000,
+        "outputPricePerMToken": 2220000
+      },
+      "us.meta.llama3-1-405b-instruct-v1:0": {
+        "inputPricePerMToken": 5320000,
+        "outputPricePerMToken": 16000000
+      },
+      "us.meta.llama3-1-70b-instruct-v1:0": {
+        "inputPricePerMToken": 990000,
+        "outputPricePerMToken": 990000
+      },
+      "us.meta.llama3-1-8b-instruct-v1:0": {
+        "inputPricePerMToken": 220000,
+        "outputPricePerMToken": 220000
+      },
+      "us.meta.llama3-2-11b-instruct-v1:0": {
+        "inputPricePerMToken": 350000,
+        "outputPricePerMToken": 350000
+      },
+      "us.meta.llama3-2-1b-instruct-v1:0": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 100000
+      },
+      "us.meta.llama3-2-3b-instruct-v1:0": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 150000
+      },
+      "us.meta.llama3-2-90b-instruct-v1:0": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 2000000
+      },
+      "us.meta.llama3-3-70b-instruct-v1:0": {
+        "inputPricePerMToken": 720000,
+        "outputPricePerMToken": 720000
+      },
+      "us.meta.llama4-maverick-17b-instruct-v1:0": {
+        "inputPricePerMToken": 240000,
+        "outputPricePerMToken": 970000
+      },
+      "us.meta.llama4-scout-17b-instruct-v1:0": {
+        "inputPricePerMToken": 170000,
+        "outputPricePerMToken": 660000
+      },
+      "us.mistral.pixtral-large-2502-v1:0": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 6000000
+      },
+      "claude-3-5-haiku": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000
+      },
+      "claude-3-5-haiku@20241022": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000
+      },
+      "claude-haiku-4-5@20251001": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 5000000,
+        "cachedInputPricePerMToken": 100000,
+        "cacheWritePricePerMToken": 1250000
+      },
+      "claude-3-5-sonnet": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000
+      },
+      "claude-3-5-sonnet@20240620": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000
+      },
+      "claude-3-7-sonnet@20250219": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-3-haiku": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000
+      },
+      "claude-3-haiku@20240307": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1250000
+      },
+      "claude-3-opus": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000
+      },
+      "claude-3-opus@20240229": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000
+      },
+      "claude-3-sonnet": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000
+      },
+      "claude-3-sonnet@20240229": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000
+      },
+      "claude-opus-4": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-opus-4-1@20250805": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-opus-4-5@20251101": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "claude-opus-4-6@default": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 25000000,
+        "cachedInputPricePerMToken": 500000,
+        "cacheWritePricePerMToken": 6250000
+      },
+      "claude-sonnet-4-5@20250929": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-opus-4@20250514": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 75000000,
+        "cachedInputPricePerMToken": 1500000,
+        "cacheWritePricePerMToken": 18750000
+      },
+      "claude-sonnet-4": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "claude-sonnet-4@20250514": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "zai.glm-4.7": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2200000
+      },
+      "zai.glm-4.7-flash": {
+        "inputPricePerMToken": 70000,
+        "outputPricePerMToken": 400000
+      },
+      "zai.glm-5": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 3200000
+      },
+      "claude-sonnet-4-6@default": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 300000,
+        "cacheWritePricePerMToken": 3750000
+      },
+      "us-gov-east-1/anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1200000,
+        "outputPricePerMToken": 6000000,
+        "cachedInputPricePerMToken": 120000,
+        "cacheWritePricePerMToken": 1500000
+      },
+      "us-gov-west-1/anthropic.claude-haiku-4-5-20251001-v1:0": {
+        "inputPricePerMToken": 1200000,
+        "outputPricePerMToken": 6000000,
+        "cachedInputPricePerMToken": 120000,
+        "cacheWritePricePerMToken": 1500000
+      }
+    },
+    "openai": {
+      "ada": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "codex-mini": {
+        "inputPricePerMToken": 1500000,
+        "outputPricePerMToken": 6000000,
+        "cachedInputPricePerMToken": 375000
+      },
+      "command-r-plus": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 15000000
+      },
+      "computer-use-preview": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 12000000
+      },
+      "eu/gpt-4o-2024-08-06": {
+        "inputPricePerMToken": 2750000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 1375000
+      },
+      "eu/gpt-4o-2024-11-20": {
+        "inputPricePerMToken": 2750000,
+        "outputPricePerMToken": 11000000,
+        "cacheWritePricePerMToken": 1380000
+      },
+      "eu/gpt-4o-mini-2024-07-18": {
+        "inputPricePerMToken": 165000,
+        "outputPricePerMToken": 660000,
+        "cachedInputPricePerMToken": 83000
+      },
+      "eu/gpt-4o-mini-realtime-preview-2024-12-17": {
+        "inputPricePerMToken": 660000,
+        "outputPricePerMToken": 2640000,
+        "cachedInputPricePerMToken": 330000
+      },
+      "eu/gpt-4o-realtime-preview-2024-10-01": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 22000000,
+        "cachedInputPricePerMToken": 2750000
+      },
+      "eu/gpt-4o-realtime-preview-2024-12-17": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 22000000,
+        "cachedInputPricePerMToken": 2750000
+      },
+      "eu/gpt-5-2025-08-07": {
+        "inputPricePerMToken": 1375000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 137500
+      },
+      "eu/gpt-5-mini-2025-08-07": {
+        "inputPricePerMToken": 275000,
+        "outputPricePerMToken": 2200000,
+        "cachedInputPricePerMToken": 27500
+      },
+      "eu/gpt-5.1": {
+        "inputPricePerMToken": 1380000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 140000
+      },
+      "eu/gpt-5.1-chat": {
+        "inputPricePerMToken": 1380000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 140000
+      },
+      "eu/gpt-5.1-codex": {
+        "inputPricePerMToken": 1380000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 140000
+      },
+      "eu/gpt-5.1-codex-mini": {
+        "inputPricePerMToken": 275000,
+        "outputPricePerMToken": 2200000,
+        "cachedInputPricePerMToken": 28000
+      },
+      "eu/gpt-5-nano-2025-08-07": {
+        "inputPricePerMToken": 55000,
+        "outputPricePerMToken": 440000,
+        "cachedInputPricePerMToken": 5500
+      },
+      "eu/o1-2024-12-17": {
+        "inputPricePerMToken": 16500000,
+        "outputPricePerMToken": 66000000,
+        "cachedInputPricePerMToken": 8250000
+      },
+      "eu/o1-mini-2024-09-12": {
+        "inputPricePerMToken": 1210000,
+        "outputPricePerMToken": 4840000,
+        "cachedInputPricePerMToken": 605000
+      },
+      "eu/o1-preview-2024-09-12": {
+        "inputPricePerMToken": 16500000,
+        "outputPricePerMToken": 66000000,
+        "cachedInputPricePerMToken": 8250000
+      },
+      "eu/o3-mini-2025-01-31": {
+        "inputPricePerMToken": 1210000,
+        "outputPricePerMToken": 4840000,
+        "cachedInputPricePerMToken": 605000
+      },
+      "global-standard/gpt-4o-2024-08-06": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "global-standard/gpt-4o-2024-11-20": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "global-standard/gpt-4o-mini": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000
+      },
+      "global/gpt-4o-2024-08-06": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "global/gpt-4o-2024-11-20": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "global/gpt-5.1": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "global/gpt-5.1-chat": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "global/gpt-5.1-codex": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "global/gpt-5.1-codex-mini": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 2000000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gpt-3.5-turbo": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "gpt-3.5-turbo-0125": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "gpt-35-turbo": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "gpt-35-turbo-0125": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "gpt-35-turbo-1106": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 2000000
+      },
+      "gpt-35-turbo-16k": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 4000000
+      },
+      "gpt-35-turbo-16k-0613": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 4000000
+      },
+      "gpt-4": {
+        "inputPricePerMToken": 30000000,
+        "outputPricePerMToken": 60000000
+      },
+      "gpt-4-0125-preview": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 30000000
+      },
+      "gpt-4-0613": {
+        "inputPricePerMToken": 30000000,
+        "outputPricePerMToken": 60000000
+      },
+      "gpt-4-1106-preview": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 30000000
+      },
+      "gpt-4-32k": {
+        "inputPricePerMToken": 60000000,
+        "outputPricePerMToken": 120000000
+      },
+      "gpt-4-32k-0613": {
+        "inputPricePerMToken": 60000000,
+        "outputPricePerMToken": 120000000
+      },
+      "gpt-4-turbo": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 30000000
+      },
+      "gpt-4-turbo-2024-04-09": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 30000000
+      },
+      "gpt-4-turbo-vision-preview": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 30000000
+      },
+      "gpt-4.1": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 8000000,
+        "cachedInputPricePerMToken": 500000
+      },
+      "gpt-4.1-2025-04-14": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 8000000,
+        "cachedInputPricePerMToken": 500000
+      },
+      "gpt-4.1-mini": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 1600000,
+        "cachedInputPricePerMToken": 100000
+      },
+      "gpt-4.1-mini-2025-04-14": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 1600000,
+        "cachedInputPricePerMToken": 100000
+      },
+      "gpt-4.1-nano": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gpt-4.1-nano-2025-04-14": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gpt-4.5-preview": {
+        "inputPricePerMToken": 75000000,
+        "outputPricePerMToken": 150000000,
+        "cachedInputPricePerMToken": 37500000
+      },
+      "gpt-4o": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "gpt-4o-2024-05-13": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 15000000
+      },
+      "gpt-4o-2024-08-06": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "gpt-4o-2024-11-20": {
+        "inputPricePerMToken": 2750000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "gpt-audio-2025-08-28": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-audio-1.5-2026-02-23": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-audio-mini-2025-10-06": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000
+      },
+      "gpt-4o-audio-preview-2024-12-17": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-4o-mini": {
+        "inputPricePerMToken": 165000,
+        "outputPricePerMToken": 660000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "gpt-4o-mini-2024-07-18": {
+        "inputPricePerMToken": 165000,
+        "outputPricePerMToken": 660000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "gpt-4o-mini-audio-preview-2024-12-17": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-4o-mini-realtime-preview-2024-12-17": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000,
+        "cachedInputPricePerMToken": 300000
+      },
+      "gpt-realtime-2025-08-28": {
+        "inputPricePerMToken": 4000000,
+        "outputPricePerMToken": 16000000,
+        "cachedInputPricePerMToken": 4000000
+      },
+      "gpt-realtime-1.5-2026-02-23": {
+        "inputPricePerMToken": 4000000,
+        "outputPricePerMToken": 16000000,
+        "cachedInputPricePerMToken": 4000000
+      },
+      "gpt-realtime-mini-2025-10-06": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000,
+        "cachedInputPricePerMToken": 60000
+      },
+      "gpt-4o-realtime-preview-2024-10-01": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 20000000,
+        "cachedInputPricePerMToken": 2500000
+      },
+      "gpt-4o-realtime-preview-2024-12-17": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 20000000,
+        "cachedInputPricePerMToken": 2500000
+      },
+      "gpt-5.1-2025-11-13": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.1-chat-2025-11-13": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.1-codex-2025-11-13": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.1-codex-mini-2025-11-13": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 2000000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gpt-5": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5-2025-08-07": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5-chat": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5-chat-latest": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5-codex": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5-mini": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 2000000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gpt-5-mini-2025-08-07": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 2000000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gpt-5-nano": {
+        "inputPricePerMToken": 50000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 5000
+      },
+      "gpt-5-nano-2025-08-07": {
+        "inputPricePerMToken": 50000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 5000
+      },
+      "gpt-5-pro": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 120000000
+      },
+      "gpt-5.1": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.1-chat": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.1-codex": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.1-codex-max": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.1-codex-mini": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 2000000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gpt-5.2": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.2-2025-12-11": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.2-chat": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.2-chat-2025-12-11": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.2-codex": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.3-chat": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.3-codex": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.2-pro": {
+        "inputPricePerMToken": 21000000,
+        "outputPricePerMToken": 168000000
+      },
+      "gpt-5.2-pro-2025-12-11": {
+        "inputPricePerMToken": 21000000,
+        "outputPricePerMToken": 168000000
+      },
+      "gpt-5.4": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 250000
+      },
+      "gpt-5.4-2026-03-05": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 250000
+      },
+      "gpt-5.4-pro": {
+        "inputPricePerMToken": 30000000,
+        "outputPricePerMToken": 180000000,
+        "cachedInputPricePerMToken": 3000000
+      },
+      "gpt-5.4-pro-2026-03-05": {
+        "inputPricePerMToken": 30000000,
+        "outputPricePerMToken": 180000000,
+        "cachedInputPricePerMToken": 3000000
+      },
+      "gpt-5.4-mini": {
+        "inputPricePerMToken": 750000,
+        "outputPricePerMToken": 4500000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "gpt-5.4-nano": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 1250000,
+        "cachedInputPricePerMToken": 20000
+      },
+      "mistral-large-2402": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "mistral-large-latest": {
+        "inputPricePerMToken": 8000000,
+        "outputPricePerMToken": 24000000
+      },
+      "o1": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 60000000,
+        "cachedInputPricePerMToken": 7500000
+      },
+      "o1-2024-12-17": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 60000000,
+        "cachedInputPricePerMToken": 7500000
+      },
+      "o1-mini": {
+        "inputPricePerMToken": 1210000,
+        "outputPricePerMToken": 4840000,
+        "cachedInputPricePerMToken": 605000
+      },
+      "o1-mini-2024-09-12": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 4400000,
+        "cachedInputPricePerMToken": 550000
+      },
+      "o1-preview": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 60000000,
+        "cachedInputPricePerMToken": 7500000
+      },
+      "o1-preview-2024-09-12": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 60000000,
+        "cachedInputPricePerMToken": 7500000
+      },
+      "o3": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 8000000,
+        "cachedInputPricePerMToken": 500000
+      },
+      "o3-2025-04-16": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 8000000,
+        "cachedInputPricePerMToken": 500000
+      },
+      "o3-deep-research": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 40000000,
+        "cachedInputPricePerMToken": 2500000
+      },
+      "o3-mini": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 4400000,
+        "cachedInputPricePerMToken": 550000
+      },
+      "o3-mini-2025-01-31": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 4400000,
+        "cachedInputPricePerMToken": 550000
+      },
+      "o3-pro": {
+        "inputPricePerMToken": 20000000,
+        "outputPricePerMToken": 80000000
+      },
+      "o3-pro-2025-06-10": {
+        "inputPricePerMToken": 20000000,
+        "outputPricePerMToken": 80000000
+      },
+      "o4-mini": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 4400000,
+        "cachedInputPricePerMToken": 275000
+      },
+      "o4-mini-2025-04-16": {
+        "inputPricePerMToken": 1100000,
+        "outputPricePerMToken": 4400000,
+        "cachedInputPricePerMToken": 275000
+      },
+      "text-embedding-3-large": {
+        "inputPricePerMToken": 130000,
+        "outputPricePerMToken": 0
+      },
+      "text-embedding-3-small": {
+        "inputPricePerMToken": 20000,
+        "outputPricePerMToken": 0
+      },
+      "text-embedding-ada-002": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "us/gpt-4.1-2025-04-14": {
+        "inputPricePerMToken": 2200000,
+        "outputPricePerMToken": 8800000,
+        "cachedInputPricePerMToken": 550000
+      },
+      "us/gpt-4.1-mini-2025-04-14": {
+        "inputPricePerMToken": 440000,
+        "outputPricePerMToken": 1760000,
+        "cachedInputPricePerMToken": 110000
+      },
+      "us/gpt-4.1-nano-2025-04-14": {
+        "inputPricePerMToken": 110000,
+        "outputPricePerMToken": 440000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "us/gpt-4o-2024-08-06": {
+        "inputPricePerMToken": 2750000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 1375000
+      },
+      "us/gpt-4o-2024-11-20": {
+        "inputPricePerMToken": 2750000,
+        "outputPricePerMToken": 11000000,
+        "cacheWritePricePerMToken": 1380000
+      },
+      "us/gpt-4o-mini-2024-07-18": {
+        "inputPricePerMToken": 165000,
+        "outputPricePerMToken": 660000,
+        "cachedInputPricePerMToken": 83000
+      },
+      "us/gpt-4o-mini-realtime-preview-2024-12-17": {
+        "inputPricePerMToken": 660000,
+        "outputPricePerMToken": 2640000,
+        "cachedInputPricePerMToken": 330000
+      },
+      "us/gpt-4o-realtime-preview-2024-10-01": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 22000000,
+        "cachedInputPricePerMToken": 2750000
+      },
+      "us/gpt-4o-realtime-preview-2024-12-17": {
+        "inputPricePerMToken": 5500000,
+        "outputPricePerMToken": 22000000,
+        "cachedInputPricePerMToken": 2750000
+      },
+      "us/gpt-5-2025-08-07": {
+        "inputPricePerMToken": 1375000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 137500
+      },
+      "us/gpt-5-mini-2025-08-07": {
+        "inputPricePerMToken": 275000,
+        "outputPricePerMToken": 2200000,
+        "cachedInputPricePerMToken": 27500
+      },
+      "us/gpt-5-nano-2025-08-07": {
+        "inputPricePerMToken": 55000,
+        "outputPricePerMToken": 440000,
+        "cachedInputPricePerMToken": 5500
+      },
+      "us/gpt-5.1": {
+        "inputPricePerMToken": 1380000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 140000
+      },
+      "us/gpt-5.1-chat": {
+        "inputPricePerMToken": 1380000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 140000
+      },
+      "us/gpt-5.1-codex": {
+        "inputPricePerMToken": 1380000,
+        "outputPricePerMToken": 11000000,
+        "cachedInputPricePerMToken": 140000
+      },
+      "us/gpt-5.1-codex-mini": {
+        "inputPricePerMToken": 275000,
+        "outputPricePerMToken": 2200000,
+        "cachedInputPricePerMToken": 28000
+      },
+      "us/o1-2024-12-17": {
+        "inputPricePerMToken": 16500000,
+        "outputPricePerMToken": 66000000,
+        "cachedInputPricePerMToken": 8250000
+      },
+      "us/o1-mini-2024-09-12": {
+        "inputPricePerMToken": 1210000,
+        "outputPricePerMToken": 4840000,
+        "cachedInputPricePerMToken": 605000
+      },
+      "us/o1-preview-2024-09-12": {
+        "inputPricePerMToken": 16500000,
+        "outputPricePerMToken": 66000000,
+        "cachedInputPricePerMToken": 8250000
+      },
+      "us/o3-2025-04-16": {
+        "inputPricePerMToken": 2200000,
+        "outputPricePerMToken": 8800000,
+        "cachedInputPricePerMToken": 550000
+      },
+      "us/o3-mini-2025-01-31": {
+        "inputPricePerMToken": 1210000,
+        "outputPricePerMToken": 4840000,
+        "cachedInputPricePerMToken": 605000
+      },
+      "us/o4-mini-2025-04-16": {
+        "inputPricePerMToken": 1210000,
+        "outputPricePerMToken": 4840000,
+        "cachedInputPricePerMToken": 310000
+      },
+      "chatgpt-4o-latest": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 15000000
+      },
+      "codex-mini-latest": {
+        "inputPricePerMToken": 1500000,
+        "outputPricePerMToken": 6000000,
+        "cachedInputPricePerMToken": 375000
+      },
+      "ft:gpt-3.5-turbo": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 6000000
+      },
+      "ft:gpt-3.5-turbo-0125": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 6000000
+      },
+      "ft:gpt-3.5-turbo-0613": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 6000000
+      },
+      "ft:gpt-3.5-turbo-1106": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 6000000
+      },
+      "ft:gpt-4-0613": {
+        "inputPricePerMToken": 30000000,
+        "outputPricePerMToken": 60000000
+      },
+      "ft:gpt-4o-2024-08-06": {
+        "inputPricePerMToken": 3750000,
+        "outputPricePerMToken": 15000000,
+        "cachedInputPricePerMToken": 1875000
+      },
+      "ft:gpt-4o-2024-11-20": {
+        "inputPricePerMToken": 3750000,
+        "outputPricePerMToken": 15000000,
+        "cacheWritePricePerMToken": 1875000
+      },
+      "ft:gpt-4o-mini-2024-07-18": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 1200000,
+        "cachedInputPricePerMToken": 150000
+      },
+      "ft:gpt-4.1-2025-04-14": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 12000000,
+        "cachedInputPricePerMToken": 750000
+      },
+      "ft:gpt-4.1-mini-2025-04-14": {
+        "inputPricePerMToken": 800000,
+        "outputPricePerMToken": 3200000,
+        "cachedInputPricePerMToken": 200000
+      },
+      "ft:gpt-4.1-nano-2025-04-14": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 800000,
+        "cachedInputPricePerMToken": 50000
+      },
+      "ft:o4-mini-2025-04-16": {
+        "inputPricePerMToken": 4000000,
+        "outputPricePerMToken": 16000000,
+        "cachedInputPricePerMToken": 1000000
+      },
+      "gpt-3.5-turbo-1106": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 2000000
+      },
+      "gpt-3.5-turbo-16k": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 4000000
+      },
+      "gpt-4-0314": {
+        "inputPricePerMToken": 30000000,
+        "outputPricePerMToken": 60000000
+      },
+      "gpt-4-turbo-preview": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 30000000
+      },
+      "gpt-4o-audio-preview": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-4o-audio-preview-2025-06-03": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-audio": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-audio-1.5": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000
+      },
+      "gpt-audio-mini": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000
+      },
+      "gpt-audio-mini-2025-12-15": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000
+      },
+      "gpt-4o-mini-audio-preview": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000
+      },
+      "gpt-4o-mini-realtime-preview": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000,
+        "cachedInputPricePerMToken": 300000
+      },
+      "gpt-4o-mini-search-preview": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "gpt-4o-mini-search-preview-2025-03-11": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "gpt-4o-realtime-preview": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 20000000,
+        "cachedInputPricePerMToken": 2500000
+      },
+      "gpt-4o-realtime-preview-2025-06-03": {
+        "inputPricePerMToken": 5000000,
+        "outputPricePerMToken": 20000000,
+        "cachedInputPricePerMToken": 2500000
+      },
+      "gpt-4o-search-preview": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "gpt-4o-search-preview-2025-03-11": {
+        "inputPricePerMToken": 2500000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 1250000
+      },
+      "gpt-5.1-chat-latest": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5.2-chat-latest": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5.3-chat-latest": {
+        "inputPricePerMToken": 1750000,
+        "outputPricePerMToken": 14000000,
+        "cachedInputPricePerMToken": 175000
+      },
+      "gpt-5-pro-2025-10-06": {
+        "inputPricePerMToken": 15000000,
+        "outputPricePerMToken": 120000000
+      },
+      "gpt-realtime": {
+        "inputPricePerMToken": 4000000,
+        "outputPricePerMToken": 16000000,
+        "cachedInputPricePerMToken": 400000
+      },
+      "gpt-realtime-1.5": {
+        "inputPricePerMToken": 4000000,
+        "outputPricePerMToken": 16000000,
+        "cachedInputPricePerMToken": 400000
+      },
+      "gpt-realtime-mini": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000
+      },
+      "o1-pro": {
+        "inputPricePerMToken": 150000000,
+        "outputPricePerMToken": 600000000
+      },
+      "o1-pro-2025-03-19": {
+        "inputPricePerMToken": 150000000,
+        "outputPricePerMToken": 600000000
+      },
+      "o3-deep-research-2025-06-26": {
+        "inputPricePerMToken": 10000000,
+        "outputPricePerMToken": 40000000,
+        "cachedInputPricePerMToken": 2500000
+      },
+      "o4-mini-deep-research": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 8000000,
+        "cachedInputPricePerMToken": 500000
+      },
+      "o4-mini-deep-research-2025-06-26": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 8000000,
+        "cachedInputPricePerMToken": 500000
+      },
+      "text-embedding-ada-002-v2": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 0
+      },
+      "gpt-5-search-api": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-5-search-api-2025-10-14": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gpt-realtime-mini-2025-12-15": {
+        "inputPricePerMToken": 600000,
+        "outputPricePerMToken": 2400000,
+        "cachedInputPricePerMToken": 60000
+      }
+    },
+    "mistral": {
+      "codestral-2405": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "codestral-latest": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "codestral-2508": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 900000
+      },
+      "codestral-mamba-latest": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 250000
+      },
+      "devstral-medium-2507": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "devstral-small-2505": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 300000
+      },
+      "devstral-small-2507": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 300000
+      },
+      "devstral-small-latest": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 300000
+      },
+      "labs-devstral-small-2512": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 300000
+      },
+      "devstral-latest": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "devstral-medium-latest": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "devstral-2512": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "magistral-medium-2506": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 5000000
+      },
+      "magistral-medium-2509": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 5000000
+      },
+      "magistral-medium-1-2-2509": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 5000000
+      },
+      "magistral-medium-latest": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 5000000
+      },
+      "magistral-small-2506": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "magistral-small-latest": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "magistral-small-1-2-2509": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "mistral-large-2402": {
+        "inputPricePerMToken": 4000000,
+        "outputPricePerMToken": 12000000
+      },
+      "mistral-large-2407": {
+        "inputPricePerMToken": 3000000,
+        "outputPricePerMToken": 9000000
+      },
+      "mistral-large-2411": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 6000000
+      },
+      "mistral-large-latest": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "mistral-large-3": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "mistral-large-2512": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 1500000
+      },
+      "mistral-medium": {
+        "inputPricePerMToken": 2700000,
+        "outputPricePerMToken": 8100000
+      },
+      "mistral-medium-2312": {
+        "inputPricePerMToken": 2700000,
+        "outputPricePerMToken": 8100000
+      },
+      "mistral-medium-2505": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "mistral-medium-latest": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "mistral-medium-3-1-2508": {
+        "inputPricePerMToken": 400000,
+        "outputPricePerMToken": 2000000
+      },
+      "mistral-small": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 300000
+      },
+      "mistral-small-latest": {
+        "inputPricePerMToken": 60000,
+        "outputPricePerMToken": 180000
+      },
+      "mistral-small-3-2-2506": {
+        "inputPricePerMToken": 60000,
+        "outputPricePerMToken": 180000
+      },
+      "ministral-3-3b-2512": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 100000
+      },
+      "ministral-3-8b-2512": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 150000
+      },
+      "ministral-3-14b-2512": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 200000
+      },
+      "mistral-tiny": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 250000
+      },
+      "open-codestral-mamba": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 250000
+      },
+      "open-mistral-7b": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 250000
+      },
+      "open-mistral-nemo": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 300000
+      },
+      "open-mistral-nemo-2407": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 300000
+      },
+      "open-mixtral-8x22b": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 6000000
+      },
+      "open-mixtral-8x7b": {
+        "inputPricePerMToken": 700000,
+        "outputPricePerMToken": 700000
+      },
+      "pixtral-12b-2409": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 150000
+      },
+      "pixtral-large-2411": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 6000000
+      },
+      "pixtral-large-latest": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 6000000
+      }
+    },
+    "google": {
+      "gemini-2.0-flash": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 25000
+      },
+      "gemini-2.0-flash-001": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000,
+        "cachedInputPricePerMToken": 37500
+      },
+      "gemini-2.0-flash-lite": {
+        "inputPricePerMToken": 75000,
+        "outputPricePerMToken": 300000,
+        "cachedInputPricePerMToken": 18750
+      },
+      "gemini-2.0-flash-lite-001": {
+        "inputPricePerMToken": 75000,
+        "outputPricePerMToken": 300000,
+        "cachedInputPricePerMToken": 18750
+      },
+      "gemini-2.5-flash": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000,
+        "cachedInputPricePerMToken": 30000,
+        "reasoningPricePerMToken": 2500000
+      },
+      "gemini-3.1-flash-lite-preview": {
+        "inputPricePerMToken": 250000,
+        "outputPricePerMToken": 1500000,
+        "cachedInputPricePerMToken": 25000,
+        "reasoningPricePerMToken": 1500000
+      },
+      "gemini-2.5-flash-lite": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 10000,
+        "reasoningPricePerMToken": 400000
+      },
+      "gemini-2.5-flash-lite-preview-09-2025": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 10000,
+        "reasoningPricePerMToken": 400000
+      },
+      "gemini-2.5-flash-preview-09-2025": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000,
+        "cachedInputPricePerMToken": 75000,
+        "reasoningPricePerMToken": 2500000
+      },
+      "gemini-2.5-flash-lite-preview-06-17": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 25000,
+        "reasoningPricePerMToken": 400000
+      },
+      "gemini-2.5-pro": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gemini-3-pro-preview": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 12000000,
+        "cachedInputPricePerMToken": 200000
+      },
+      "gemini-3.1-pro-preview": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 12000000,
+        "cachedInputPricePerMToken": 200000
+      },
+      "gemini-3.1-pro-preview-customtools": {
+        "inputPricePerMToken": 2000000,
+        "outputPricePerMToken": 12000000,
+        "cachedInputPricePerMToken": 200000
+      },
+      "gemini-3-flash-preview": {
+        "inputPricePerMToken": 500000,
+        "outputPricePerMToken": 3000000,
+        "cachedInputPricePerMToken": 50000
+      },
+      "gemini-2.5-pro-preview-tts": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      },
+      "gemini-robotics-er-1.5-preview": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000,
+        "cachedInputPricePerMToken": 0,
+        "reasoningPricePerMToken": 2500000
+      },
+      "gemini-2.5-computer-use-preview-10-2025": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000
+      },
+      "gemini-embedding-2-preview": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 0
+      },
+      "gemini-flash-experimental": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "gemini-embedding-001": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 0
+      },
+      "gemini-1.5-flash": {
+        "inputPricePerMToken": 75000,
+        "outputPricePerMToken": 0
+      },
+      "gemini-flash-latest": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000,
+        "cachedInputPricePerMToken": 75000,
+        "reasoningPricePerMToken": 2500000
+      },
+      "gemini-flash-lite-latest": {
+        "inputPricePerMToken": 100000,
+        "outputPricePerMToken": 400000,
+        "cachedInputPricePerMToken": 25000,
+        "reasoningPricePerMToken": 400000
+      },
+      "gemini-exp-1114": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "gemini-exp-1206": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "gemini-gemma-2-27b-it": {
+        "inputPricePerMToken": 350000,
+        "outputPricePerMToken": 1050000
+      },
+      "gemini-gemma-2-9b-it": {
+        "inputPricePerMToken": 350000,
+        "outputPricePerMToken": 1050000
+      },
+      "gemma-3-27b-it": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "learnlm-1.5-pro-experimental": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "lyria-3-clip-preview": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "lyria-3-pro-preview": {
+        "inputPricePerMToken": 0,
+        "outputPricePerMToken": 0
+      },
+      "gemini-2.5-flash-native-audio-latest": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000
+      },
+      "gemini-2.5-flash-native-audio-preview-09-2025": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000
+      },
+      "gemini-2.5-flash-native-audio-preview-12-2025": {
+        "inputPricePerMToken": 300000,
+        "outputPricePerMToken": 2500000
+      },
+      "gemini-3.1-flash-live-preview": {
+        "inputPricePerMToken": 750000,
+        "outputPricePerMToken": 4500000
+      },
+      "gemini-pro-latest": {
+        "inputPricePerMToken": 1250000,
+        "outputPricePerMToken": 10000000,
+        "cachedInputPricePerMToken": 125000
+      }
+    },
+    "groq": {
+      "llama-3.1-8b-instant": {
+        "inputPricePerMToken": 50000,
+        "outputPricePerMToken": 80000
+      },
+      "llama-3.3-70b-versatile": {
+        "inputPricePerMToken": 590000,
+        "outputPricePerMToken": 790000
+      },
+      "gemma-7b-it": {
+        "inputPricePerMToken": 50000,
+        "outputPricePerMToken": 80000
+      },
+      "meta-llama/llama-guard-4-12b": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 200000
+      },
+      "meta-llama/llama-4-maverick-17b-128e-instruct": {
+        "inputPricePerMToken": 200000,
+        "outputPricePerMToken": 600000
+      },
+      "meta-llama/llama-4-scout-17b-16e-instruct": {
+        "inputPricePerMToken": 110000,
+        "outputPricePerMToken": 340000
+      },
+      "moonshotai/kimi-k2-instruct-0905": {
+        "inputPricePerMToken": 1000000,
+        "outputPricePerMToken": 3000000,
+        "cachedInputPricePerMToken": 500000
+      },
+      "openai/gpt-oss-120b": {
+        "inputPricePerMToken": 150000,
+        "outputPricePerMToken": 600000,
+        "cachedInputPricePerMToken": 75000
+      },
+      "openai/gpt-oss-20b": {
+        "inputPricePerMToken": 75000,
+        "outputPricePerMToken": 300000,
+        "cachedInputPricePerMToken": 37500
+      },
+      "openai/gpt-oss-safeguard-20b": {
+        "inputPricePerMToken": 75000,
+        "outputPricePerMToken": 300000,
+        "cachedInputPricePerMToken": 37000
+      },
+      "qwen/qwen3-32b": {
+        "inputPricePerMToken": 290000,
+        "outputPricePerMToken": 590000
+      }
+    }
+  }
+}
